@@ -38,10 +38,10 @@
             "composer install",
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
             "@php artisan key:generate",
-            "@php artisan migrate --force",
+            "@php artisan migrate --force"
         ],
         "dev": [
-            "Composer\\Config::disableProcessTimeout",
+            "Composer\\Config::disableProcessTimeout"
         ],
         "test": [
             "@php artisan config:clear --ansi",
